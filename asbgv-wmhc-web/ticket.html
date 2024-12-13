@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link href="./output.css" rel="stylesheet" />
     <link
@@ -13,15 +14,7 @@
     <title>Booking Ticket</title>
 </head>
 <body>
-    <body>
-        <div id="header"></div>
-        <script>
-            fetch('./header.html')
-                .then(response => response.text())
-                .then(data => document.getElementById('header').innerHTML = data)
-                .catch(error => console.error('Error loading header:', error));
-        </script>
-    </body>
-    
+    <div id="header"></div>
+    <div id="footer"></div>
 </body>
 </html>
