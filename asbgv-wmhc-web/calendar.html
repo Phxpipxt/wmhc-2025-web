@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Logo" class="h-24" />
+            </div>
+            <nav class="space-x-6">
+                <a href="./calendar.html" class="nav-link">Calendar</a>
+                <a href="./speakers.html" class="nav-link">Speakers</a>
+                <a href="./partners.html" class="nav-link">Partnership</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="./index.html">
+                    <button class="home-btn">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                </a>
+
+                <a href="./ticket.html">
+                    <button class="ticket-btn">Ticket</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-8">
+        <div class="mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-pink-500">
+                Event Schedule & Speakers
+            </h1>
+            <p class="text-pink-500">
+                <i class="fa-regular fa-calendar-days"></i> When: April 24 - 27, 2025
+            </p>
+            <p class="text-pink-500">
+                <i class="fa-solid fa-location-dot"></i> Where: The American School of
+                Bangkok Green Valley
+            </p>
+        </div>
+
+        <div class="text-left mb-8">
+            <button class="bg-pink-500 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600">
+                Download Schedule
+            </button>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-8">
+            <!-- Schedule Image -->
+            <img src="./image/schedule.png" alt="schedule" class="w-full lg:w-1/2 mb-6 lg:mb-0" />
+    </section>
+
+    <!-- Speaker Section -->
+    <div class="flex flex-col lg:w-1/2 space-y-8">
+        <div class="grid grid-cols-4 gap-6">
+            <!-- Speaker 1 -->
+            <div class="flex flex-col items-center">
+                <img class="speaker border-4 border-yellow-400" src="./image/speaker1.jpg" alt="speaker1" />
+                <h3 class="mt-4 text-center text-lg font-bold text-yellow-500">
+                    Thursday April 24, 2025
+                </h3>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="flex flex-col items-center">
+                <img class="speaker border-4 border-pink-500" src="./image/speaker2.jpg" alt="speaker2" />
+                <h3 class="mt-4 text-center text-lg font-bold text-pink-500">
+                    Nisanart Dharmageisirattana
+                </h3>
+            </div>
+            <!-- Speaker 3 -->
+            <div class="flex flex-col items-center">
+                <img class="speaker border-4 border-purple-500" src="./image/speaker3.jpg" alt="speaker3" />
+                <h3 class="mt-4 text-center text-lg font-bold text-purple-500">
+                    Associate Professor Monti Ddataa
+                </h3>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="flex flex-col items-center">
+                <img class="speaker border-4 border-blue-400" src="./image/speaker4.jpg" alt="speaker4" />
+                <h3 class="mt-4 text-center text-lg font-bold text-blue-400">
+                    William Villafranco
+                </h3>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* Body & Header */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  @apply bg-gray-100
+}
+
+.header {
+  @apply bg-white shadow-md shadow-pink-500
+}
+
+.h3-header{
+  @apply font-bold text-lg text-gray-800
+}
+
+.div-head{
+  @apply text-4xl font-bold text-pink-500
+}
+
+
+.logo {
+  @apply flex items-center space-x-2
+}
+
+.nav-link{
+  @apply text-gray-700 hover:text-pink-500
+}
+
+
+/* Ticket Style */
+.ticket-head{
+  @apply text-6xl font-bold text-pink-500
+}
+
+.ticket-btn {
+  @apply bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600
+}
+
+.ticket-div{
+  @apply bg-white rounded-lg shadow-md border border-pink-200 p-6 text-center
+}
+
+.ticket-type{
+  @apply bg-pink-500 text-white py-2 rounded-t-lg font-semibold
+}
+
+/* Div Style */
+
+.container-div {
+  @apply container mx-auto px-4 py-8 pt-24
+}
+
+.main-div{
+  @apply flex flex-col lg:flex-row items-start lg:space-x-8
+}
+
+
+/* Speaker & Schedule Style */
+.speaker-div{
+  @apply mt-4 flex justify-center space-x-4 text-center
+}
+
+.speaker{
+  @apply size-40 object-cover rounded-lg
+}
+
+.schedule-detail{
+  @apply py-2 text-pink-500
+}
+
+/* Video Style */
+
+.video-div{
+  @apply relative border-4 border-pink-500 rounded-lg overflow-hidden
+}
+
+
+/* Countdown Style */
+
+.countdown-div{
+  @apply container mt-4 flex justify-center space-x-4 text-center
+}
+
+.countdown{
+  @apply flex flex-col items-center bg-pink-500 text-white px-6 py-4 rounded-xl w-24
+}
+
+.counting{
+  @apply text-4xl font-bold
+}
+
+
+/* Button Style */
+
+.home-btn {
+  @apply text-gray-700 hover:text-gray-900 
+}
+
+/* Partner Style */
+
+.partner-logo{
+  @apply h-40 object-contain mx-auto
+}
+
+.partner-div{
+  @apply border-4 border-yellow-400 rounded-lg p-4
+}
+
+/* Contact & Form Style */
+.contact-div{
+  @apply min-h-[80vh] py-6 flex flex-col items-center justify-center
+}
+
+.form-grid{
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4
+}
+
+.form-field{
+  @apply border border-gray-300 rounded px-4 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none
+}
+.send-btn {
+  @apply bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 focus:outline-none
+}
+
+.form-div{
+  @apply w-11/12 max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8
+}
+
+.social-logo{
+  @apply text-blue-500
+}
+
+
+/* Footer Style */
+
+.footer{
+  @apply text-white
+}
