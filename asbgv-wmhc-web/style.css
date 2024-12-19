@@ -72,6 +72,22 @@ body {
   @apply size-40 object-cover rounded-lg
 }
 
+.speaker-img{
+  @apply w-40 h-40 rounded-lg shadow-lg object-cover
+}
+
+.speaker-role{
+  @apply uppercase font-medium text-sm mb-4
+}
+
+.speaker-bio{
+  @apply text-lg font-bold text-gray-700 mb-2
+}
+
+.speaker-text{
+  @apply text-gray-600 leading-relaxed mb-4
+}
+
 .schedule-detail{
   @apply py-2 text-pink-500
 }
