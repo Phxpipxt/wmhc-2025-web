@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./app.js"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"/>
-    <title>Event Schedule</title>
-</head>
-<body>
-    <div id="header"></div>
 
-    <div id="footer"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <title>Event Schedule</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <!-- Event Schedule Section -->
+  <section class="container mx-auto px-4 py-8">
+    <div class="mb-6 text-center">
+      <h1 class="text-2xl md:text-3xl font-bold text-pink-500">
+        Event Schedule & Speakers
+      </h1>
+      <p class="text-pink-500">
+        <i class="fa-regular fa-calendar-days"></i> April 24 - 27, 2025
+      </p>
+      <p class="text-pink-500">
+        <i class="fa-solid fa-location-dot"></i> The American School of
+        Bangkok Green Valley
+      </p>
+    </div>
+
+    <!-- Download Schedule Button -->
+    <div class="text-center mb-8">
+      <button class="bg-pink-500 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600">
+        Download Schedule
+      </button>
+    </div>
+
+    <!-- Schedule Image -->
+    <div class="flex justify-center">
+      <img src="./image/schedule.png" alt="schedule" class="w-full lg:w-1/2" />
+    </div>
+  </section>
+
+  <div id="footer"></div>
 </body>
+
 </html>
