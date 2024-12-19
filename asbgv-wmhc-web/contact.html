@@ -1,20 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./app.js"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <title>Contact Us</title>
 </head>
-<body>
-    <div id="header"></div>
-    <div id="footer"></div>
+
+<body class="bg-gray-100">
+  <div id="header"></div>
+
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Contact Form -->
+        <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200">
+          <h1 class="text-3xl font-bold text-center text-blue-700 mb-6">
+            Contact Us
+          </h1>
+          <form class="space-y-6">
+            
+            <!-- First & Last Name -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="relative">
+                <i class="fas fa-user form-i"></i>
+                <input type="text" placeholder="First Name" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+              </div>
+              <div class="relative">
+                <i class="fas fa-user form-i"></i>
+                <input type="text" placeholder="Last Name" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+              </div>
+            </div>
+          
+            <!-- Email & Phone -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="relative">
+                <i class="fas fa-envelope form-i"></i>
+                <input type="email" placeholder="Email" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+              </div>
+              <div class="relative">
+                <i class="fas fa-phone-alt form-i"></i>
+                <input type="tel" placeholder="Phone" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+              </div>
+            </div>
+          
+            <!-- Subject -->
+            <div class="relative">
+              <i class="fas fa-tag form-i"></i>
+              <input type="text" placeholder="Subject" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" />
+            </div>
+          
+            <!-- Message -->
+            <div class="relative">
+              <i class="fas fa-comment-dots absolute left-3 top-5 transform -translate-y-1/2 text-blue-500 text-lg"></i>
+              <textarea placeholder="Message" rows="5" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"></textarea>
+            </div>
+
+            <div class="flex justify-center space-x-4">
+              <a href="https://www.instagram.com/asb_gv/" target="_blank" class="social-logo"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/americanschoolbkk" target="_blank" class="social-logo"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.youtube.com/@asbgreenvalley" target="_blank" class="social-logo"><i class="fab fa-youtube"></i></a>
+              <a href="https://asbgv.ac.th" target="_blank" class="social-logo"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          
+            <!-- Submit Button -->
+            <button type="submit" class="form-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200">
+          <h2 class="text-3xl font-bold text-center text-blue-700 mb-6">
+            Find Us
+          </h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4882.499331750054!2d100.7220609!3d13.6136376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d5c3dbd1f5cd5%3A0x3a37590a67e9bff7!2sThe%20American%20School%20Of%20Bangkok%20Green%20Valley!5e1!3m2!1sen!2sth!4v1733979915132!5m2!1sen!2sth"
+            class="w-full h-80 rounded-lg border-2 border-gray-300" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mt-6">
+            <div class="flex items-center space-x-4 mb-4">
+              <i class="fas fa-map-marker-alt text-blue-700 text-2xl"></i>
+              <h3 class="text-xl font-semibold text-gray-700">Our Address</h3>
+            </div>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              The American School Of Bangkok Green Valley<br />
+              Moo 3 Bangna-Trad Road Km.15<br />
+              Bangplee, Samutprakarn 10540, Thailand
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
 </body>
+
 </html>

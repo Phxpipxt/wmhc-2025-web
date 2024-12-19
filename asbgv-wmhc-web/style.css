@@ -31,7 +31,7 @@ body {
 }
 
 .nav-link{
-  @apply text-gray-700 hover:text-pink-500 hover:underline
+  @apply text-gray-700 hover:text-pink-500 hover:underline transition-all duration-300
 }
 
 
@@ -158,6 +158,17 @@ body {
   @apply text-blue-500
 }
 
+.form-input{
+  @apply pl-16 form-field border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 rounded w-full px-8 py-10
+}
+
+.form-i{
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-500 text-lg
+}
+
+.form-btn{
+  @apply bg-blue-500 text-white font-normal py-2 px-4 w-full rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300
+}
 
 /* Footer Style */
 
