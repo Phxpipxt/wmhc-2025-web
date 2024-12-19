@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./app.js"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>Booking Ticket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <title>Booking Ticket</title>
 </head>
-<body>
-    <div id="header"></div>
-    <div id="footer"></div>
+
+<body class="font-sans">
+  <div id="header"></div>
+  <section class="container mx-auto px-4 py-24">
+    <!-- Ticket Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Individual Ticket -->
+      <div class="ticket-container border-pink-500">
+        <!-- Highlight Banner -->
+        <div class="absolute top-0 left-0 bg-pink-500 text-white px-4 py-2 text-xs uppercase font-bold">Best Value</div>
+        <h3 class="text-2xl font-semibold text-pink-600 mb-6">Individual Ticket</h3>
+        <div class="text-center">
+          <div class="text-gray-800 text-6xl font-extrabold mb-2">฿999</div>
+          <p class="text-gray-500 text-sm">per person</p>
+        </div>
+        <ul class="ul-list">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-check text-green-500"></i> Access to all sessions
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-gift text-blue-500"></i> Free conference kit
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-utensils text-red-500"></i> Lunch & refreshments
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-certificate text-yellow-500"></i> Participation certificate
+          </li>
+        </ul>
+        <button
+          class="mt-8 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-3 rounded-full font-bold hover:from-pink-600 hover:to-pink-700 transform hover:scale-105 transition">
+          Book Now
+        </button>
+      </div>
+
+      <!-- Group Ticket -->
+      <div class="ticket-container border-green-500">
+        <!-- Highlight Banner -->
+        <div class="absolute top-0 left-0 bg-green-500 text-white px-4 py-2 text-xs uppercase font-bold">Most Popular
+        </div>
+        <h3 class="text-2xl font-semibold text-green-600 mb-6">Group Ticket (5+ People)</h3>
+        <div class="text-center">
+          <div class="text-gray-800 text-5xl font-extrabold mb-2">SAVE 20%</div>
+          <p class="text-gray-500 text-sm">Discount for groups</p>
+        </div>
+        <ul class="ul-list6">
+          <li class="ticket-list">
+            <i class="fas fa-check text-green-500"></i> Access to all sessions
+          </li>
+          <li class="ticket-list">
+            <i class="fas fa-gift text-blue-500"></i> Free conference kit for all
+          </li>
+          <li class="ticket-list">
+            <i class="fas fa-utensils text-red-500"></i> Lunch & refreshments
+          </li>
+          <li class="ticket-list">
+            <i class="fas fa-star text-yellow-500"></i> Exclusive group benefits
+          </li>
+        </ul>
+        <button
+          class="mt-8 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-bold hover:from-green-600 hover:to-green-700 transform hover:scale-105 transition">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
 </body>
+
 </html>
