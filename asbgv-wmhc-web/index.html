@@ -10,6 +10,7 @@
   <link href="./output.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body class="body">
@@ -82,7 +83,12 @@
           spreading, it will affect the mind and create mental suffering which
           in turn, causing both physical and mental suffering.
         </p>
-        <button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 mt-6">Download Brochure</button>
+        <a href="https://asb.to/world-mental-health-proposal" target="_blank">
+          <button
+          class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 mt-6">Download Brochure</button>
+
+        </a>
+        
       </div>
     </div>
   </main>
@@ -104,9 +110,11 @@
 
     <!-- Download Schedule Button -->
     <div class="text-left mb-8">
-      <button class="bg-pink-500 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600">
-        Download Schedule
-      </button>
+      <a href="#" target="_blank"><button
+          class="bg-pink-500 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600">
+          Download Schedule
+        </button></a>
+
     </div>
 
     <div class="flex flex-col lg:flex-row items-start lg:space-x-8">
@@ -152,56 +160,57 @@
     </div>
   </section>
 
-  <section class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-green-600 mb-4">Our Partners</h1>
-    <p class="text-gray-600 mb-8">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+  <section class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-extrabold text-green-600 mb-6 text-center">Our Partners</h1>
+    <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+      We are honored to have the support of these incredible organizations. Their collaboration ensures a successful and
+      impactful event.
     </p>
 
     <!-- Partner Groups -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
       <!-- Powered By -->
       <div class="partner-div">
-        <h2 class="text-2xl font-bold text-yellow-600 mb-4">Powered By</h2>
-        <div class="grid grid-cols-1 gap-16 items-center">
-          <img src="./image/ASB.png" alt="Powered Logo 1" class="h-48 object-contain mx-auto" />
-          <img src="./image/MINDFULL.png" alt="Powered Logo 2" class="h-48 object-contain mx-auto" />
+        <h2 class="text-2xl font-bold text-yellow-500 mb-6 text-center uppercase">Powered By</h2>
+        <div class="flex flex-col items-center space-y-8">
+          <img src="./image/ASB.png" alt="Powered Logo 1" class="w-32 h-32 object-contain" />
+          <img src="./image/MINDFULL.png" alt="Powered Logo 2" class="w-32 h-32 object-contain" />
+          <img src="./image/FFHD.png" alt="Powered Logo 3" class="w-32 h-32 object-contain" />
         </div>
       </div>
 
       <!-- Education Partners -->
       <div class="partner-div">
-        <h2 class="text-2xl font-bold text-yellow-600 mb-4">
-          Education Partners
-        </h2>
-        <div class="grid grid-cols-2 gap-4 items-center">
-          <img src="./image/SU.png" alt="Education Logo 1" class="partner-logo" />
-          <img src="./image/Oklahoma.png" alt="Education Logo 2" class="partner-logo" />
-          <img src="./image/UR.jpg" alt="Education Logo 3" class="partner-logo" />
-          <img src="./image/ISD.jpg" alt="Education Logo 4" class="partner-logo" />
-          <img src="./image/GU.png" alt="Education Logo 5" class="partner-logo" />
+        <h2 class="text-2xl font-bold text-yellow-500 mb-6 text-center uppercase">Education Partners</h2>
+        <div class="grid grid-cols-3 gap-6 items-center">
+          <img src="./image/SU.png" alt="Education Logo 1" class="w-24 h-24 object-contain" />
+          <img src="./image/Oklahoma.png" alt="Education Logo 2" class="w-24 h-24 object-contain" />
+          <img src="./image/UR.jpg" alt="Education Logo 3" class="w-24 h-24 object-contain" />
+          <img src="./image/WCUK_0.jpg" alt="Education Logo 4" class="w-24 h-24 object-contain" />
+          <img src="./image/ISD.jpg" alt="Education Logo 5" class="w-24 h-24 object-contain" />
+          <img src="./image/GU.png" alt="Education Logo 6" class="w-24 h-24 object-contain" />
         </div>
       </div>
 
       <!-- Organization Partners -->
       <div class="partner-div">
-        <h2 class="text-2xl font-bold text-yellow-600 mb-4">
-          Organization Partners
-        </h2>
-        <div class="grid grid-cols-3 gap-4 items-center">
-          <img src="./image/FFHD.png" alt="Organization Logo 1" class="partner-logo" />
-          <img src="./image/WHO.png" alt="Organization Logo 2" class="partner-logo" />
-          <img src="./image/MET.png" alt="Organization Logo 3" class="partner-logo" />
-          <img src="./image/MPH.png" alt="Organization Logo 4" class="partner-logo" />
-          <img src="./image/MSD.png" alt="Organization Logo 5" class="partner-logo" />
-          <img src="./image/NHK.jpg" alt="Organization Logo 6" class="partner-logo h-24" />
-          <img src="./image/Japan.png" alt="Organization Logo 7" class="partner-logo" />
-          <img src="./image/VBTF.png" alt="Organization Logo 8" class="partner-logo" />
+        <h2 class="text-2xl font-bold text-yellow-500 mb-6 text-center uppercase">Organization Partners</h2>
+        <div class="grid grid-cols-3 gap-6 items-center">
+          <img src="./image/WHO.png" alt="Organization Logo 1" class="w-24 h-24 object-contain" />
+          <img src="./image/MET.png" alt="Organization Logo 2" class="w-24 h-24 object-contain" />
+          <img src="./image/MPH.png" alt="Organization Logo 3" class="w-24 h-24 object-contain" />
+          <img src="./image/MSD.png" alt="Organization Logo 4" class="w-24 h-24 object-contain" />
+          <img src="./image/NHK.jpg" alt="Organization Logo 5" class="w-24 h-24 object-contain" />
+          <img src="./image/Japan.png" alt="Organization Logo 6" class="w-24 h-24 object-contain" />
+          <img src="./image/RTG_0.png" alt="Organization Logo 7" class="w-24 h-24 object-contain" />
+          <img src="./image/NYPD.png" alt="Organization Logo 8" class="w-24 h-24 object-contain" />
+          <img src="./image/USA_0.png" alt="Organization Logo 9" class="w-24 h-24 object-contain" />
+          <img src="./image/VBTF.png" alt="Organization Logo 10" class="w-24 h-24 object-contain" />
         </div>
       </div>
     </div>
   </section>
+
 
   <section class="bg-pink-200">
     <div class="max-w-4xl mx-auto p-6">
@@ -292,4 +301,5 @@
   </section>
   <div id="footer"></div>
 </body>
+
 </html>

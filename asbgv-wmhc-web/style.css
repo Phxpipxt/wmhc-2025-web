@@ -31,7 +31,7 @@ body {
 }
 
 .nav-link{
-  @apply text-gray-700 hover:text-pink-500
+  @apply text-gray-700 hover:text-pink-500 hover:underline
 }
 
 
@@ -84,24 +84,24 @@ body {
 
 
 /* Countdown Style */
-
-.countdown-div{
-  @apply container mt-4 flex justify-center space-x-4 text-center
+.countdown-div {
+  @apply container mt-8 mb-8 flex justify-center space-x-6 text-center;
 }
 
-.countdown{
-  @apply flex flex-col items-center bg-pink-500 text-white px-6 py-4 rounded-xl w-24
+.countdown {
+  @apply flex flex-col items-center bg-pink-500 text-white px-6 py-4 rounded-xl w-28 shadow-lg;
 }
 
-.counting{
-  @apply text-4xl font-bold
+.counting {
+  @apply text-4xl font-bold;
 }
+
 
 
 /* Button Style */
 
 .home-btn {
-  @apply text-gray-700 hover:text-gray-900 
+  @apply text-gray-700 hover:text-pink-500 
 }
 
 /* Partner Style */
@@ -110,8 +110,12 @@ body {
   @apply h-40 object-contain mx-auto
 }
 
+.powered-logo {
+  @apply h-48 object-contain mx-auto
+}
+
 .partner-div{
-  @apply border-4 border-yellow-400 rounded-lg p-4
+  @apply border-4 border-yellow-400 rounded-lg p-2
 }
 
 /* Contact & Form Style */
@@ -125,7 +129,7 @@ body {
 
 .form-field{
   @apply border border-gray-300 rounded px-4 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none
-}
+} 
 .send-btn {
   @apply bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 focus:outline-none
 }
