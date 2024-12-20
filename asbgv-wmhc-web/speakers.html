@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <title>Our Speakers</title>
+</head>
+
+<body>
+  <div id="header" class="pb-6"></div>
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">
+        Our Speakers
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Speaker 1 -->
+        <div
+          class="speaker-card">
+          <img src="./image/speaker1.jpg" alt="Speaker 1" class="rounded-t-lg w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              AJARN HARTANTO GUNAWAN
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Director, Foundation for Human Development
+            </p>
+            <a href="#"
+              class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-medium  transition view-profile-btn"
+              data-speaker="1">View Profile</a>
+          </div>
+        </div>
+
+        <!-- Speaker 2 -->
+        <div
+          class="speaker-card">
+          <img src="./image/speaker2.jpg" alt="Speaker 2" class="rounded-t-lg w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              NISANART DHARMAGEISIRATTANA
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Director of The American School of Bangkok
+            </p>
+            <a href="#"
+              class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium  transition view-profile-btn"
+              data-speaker="2">View Profile</a>
+          </div>
+        </div>
+
+        <!-- Speaker 3 -->
+        <div
+          class="speaker-card">
+          <img src="./image/speaker3.jpg" alt="Speaker 3" class="rounded-t-lg w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              DR. MONTI DATTA
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Associate Professor of Political Science
+            </p>
+            <a href="#"
+              class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium  transition view-profile-btn"
+              data-speaker="3">View Profile</a>
+          </div>
+        </div>
+
+        <!-- Speaker 4 -->
+        <div
+          class="speaker-card">
+          <img src="./image/speaker4.jpg" alt="Speaker 4" class="rounded-t-lg w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              WILLIAM VILLAFRANCO
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Trustee Virginia B. Toulmin Foundation, Entrepreneur and
+              Philanthropist
+            </p>
+            <a href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium  transition view-profile-btn"
+              data-speaker="4">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="profile-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
+    <div
+      class="speaker-modal">
+      <h3 id="modal-title" class="text-2xl font-semibold text-gray-800 mb-4"></h3>
+      <div id="modal-content" class="text-gray-600 mb-6 overflow-y-auto max-h-[70vh] leading-relaxed"></div>
+      <div class="flex justify-end">
+        <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="modal.js"></script>
+  <script src="loadContent.js"></script>
+  <div id="footer"></div>
+</body>
+</html>
