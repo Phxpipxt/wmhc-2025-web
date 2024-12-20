@@ -104,7 +104,7 @@ body {
 
 /* Countdown Style */
 .countdown-div {
-  @apply container mt-8 mb-8 flex justify-center space-x-6 text-center;
+  @apply flex justify-center items-center flex-wrap gap-4 text-2xl md:text-3xl lg:text-4xl w-full p-4
 }
 
 .countdown {

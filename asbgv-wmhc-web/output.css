@@ -861,54 +861,29 @@ body {
 /* Countdown Style */
 
 .countdown-div {
+  display: flex;
   width: 100%;
-}
-
-@media (min-width: 640px) {
-  .countdown-div {
-    max-width: 640px;
-  }
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 768px) {
   .countdown-div {
-    max-width: 768px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .countdown-div {
-    max-width: 1024px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
-}
-
-@media (min-width: 1280px) {
-  .countdown-div {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .countdown-div {
-    max-width: 1536px;
-  }
-}
-
-.countdown-div {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.countdown-div > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.countdown-div {
-  text-align: center;
 }
 
 .countdown {

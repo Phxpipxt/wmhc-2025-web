@@ -13,33 +13,26 @@
 
 <body>
   <header class="bg-white shadow-md shadow-pink-500">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="container mx-auto px-4 py-4 flex flex-col lg:flex-row lg:items-center lg:justify-between">
       <!-- Logo -->
-      <div class="logo">
-       <a href="index.html"><img src="./image/logo.png" alt="Logo" class="h-24" /></a> 
+      <div class="logo mb-4 lg:mb-0 flex justify-center">
+        <a href="index.html">
+          <img src="./image/logo.png" alt="Logo" class="h-24" />
+        </a>
       </div>
-  
-      <!-- Hamburger Menu Button (Visible on Small Screens) -->
-      <button
-        id="menu-toggle"
-        class="lg:hidden text-pink-500 text-2xl focus:outline-none"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-  
+
       <!-- Navigation Menu -->
       <nav
         id="menu"
-        class="hidden lg:flex space-x-6 items-center"
+        class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 items-center"
       >
-        <a href="./calendar.html" class="nav-link">Schedule</a>
-        <a href="./speakers.html" class="nav-link">Speakers</a>
-        <a href="./partners.html" class="nav-link">Partnership</a>
-        <a href="./contact.html" class="nav-link">Contact Us</a>
-        <a href="./index.html">
-          <button class="home-btn transition-all duration-300">
-            <i class="fa-solid fa-house"></i>
-          </button>
+        <a href="./calendar.html" class="nav-link text-pink-500 font-bold hover:underline">Schedule</a>
+        <a href="./speakers.html" class="nav-link text-pink-500 font-bold hover:underline">Speakers</a>
+        <a href="./partners.html" class="nav-link text-pink-500 font-bold hover:underline">Partnership</a>
+        <a href="./contact.html" class="nav-link text-pink-500 font-bold hover:underline">Contact Us</a>
+        <a href="./index.html" class="flex items-center space-x-2 text-pink-500 font-bold hover:underline">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
         </a>
         <a href="./ticket.html">
           <button class="ticket-btn bg-pink-500 text-white px-4 py-2 rounded-lg transition-transform transform hover:scale-105">
@@ -48,37 +41,7 @@
         </a>
       </nav>
     </div>
-  
-    <!-- Mobile Dropdown Menu -->
-    <div
-      id="mobile-menu"
-      class="hidden flex flex-col space-y-4 bg-white shadow-md p-4 lg:hidden"
-    >
-      <a href="./calendar.html" class="nav-link">Schedule</a>
-      <a href="./speakers.html" class="nav-link">Speakers</a>
-      <a href="./partners.html" class="nav-link">Partnership</a>
-      <a href="./contact.html" class="nav-link">Contact</a>
-      <a href="./index.html" class="nav-link flex items-center space-x-2">
-        <i class="fa-solid fa-house text-pink-500"></i>
-        <span>Home</span>
-      </a>
-      <a href="./ticket.html">
-        <button class="ticket-btn bg-pink-500 text-white px-4 py-2 rounded-lg w-full">
-          Ticket
-        </button>
-      </a>
-    </div>
   </header>
-
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-  
-    menuToggle.addEventListener("click", () => {
-      console.log("Hamburger menu clicked");
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
 </body>
 
 </html>
