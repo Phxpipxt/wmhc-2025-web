@@ -74,30 +74,21 @@ body {
   @apply flex flex-col lg:flex-row items-start lg:space-x-8
 }
 
-
 /* Speaker & Schedule Style */
 .speaker-div{
   @apply mt-4 flex justify-center space-x-4 text-center
 }
 
+.speaker-card {
+  @apply bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl flex flex-col
+}
+
+.speaker-modal{
+  @apply bg-white rounded-lg shadow-2xl max-w-3xl w-full mx-4 p-6 transform transition-all duration-300 scale-95
+}
+
 .speaker{
   @apply size-40 object-cover rounded-lg
-}
-
-.speaker-img{
-  @apply w-40 h-40 rounded-lg shadow-lg object-cover
-}
-
-.speaker-role{
-  @apply uppercase font-medium text-sm mb-4
-}
-
-.speaker-bio{
-  @apply text-lg font-bold text-gray-700 mb-2
-}
-
-.speaker-text{
-  @apply text-gray-600 leading-relaxed mb-4
 }
 
 .schedule-detail{
@@ -123,8 +114,6 @@ body {
 .counting {
   @apply text-4xl font-bold;
 }
-
-
 
 /* Button Style */
 
