@@ -124,7 +124,7 @@ body {
 /* Partner Style */
 
 .partner-logo{
-  @apply h-40 object-contain mx-auto
+  @apply w-24 h-24 object-contain
 }
 
 .powered-logo {
@@ -132,7 +132,7 @@ body {
 }
 
 .partner-div{
-  @apply border-4 border-yellow-400 rounded-lg p-2
+  @apply bg-white border-4 border-yellow-400 rounded-lg shadow-sm p-6
 }
 
 /* Contact & Form Style */

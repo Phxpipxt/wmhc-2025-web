@@ -14,68 +14,86 @@
 <body class="font-sans">
   <div id="header"></div>
   <section class="container mx-auto px-4 py-24">
-    <!-- Ticket Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex flex-wrap justify-center gap-12">
       <!-- Individual Ticket -->
-      <div class="ticket-container border-pink-500">
-        <!-- Highlight Banner -->
-        <div class="absolute top-0 left-0 bg-pink-500 text-white px-4 py-2 text-xs uppercase font-bold">Best Value</div>
-        <h3 class="text-2xl font-semibold text-pink-600 mb-6">Individual Ticket</h3>
-        <div class="text-center">
-          <div class="text-gray-800 text-6xl font-extrabold mb-2">฿999</div>
-          <p class="text-gray-500 text-sm">per person</p>
+      <div class="w-full sm:w-[350px] md:w-[400px] lg:w-[450px] border-4 border-pink-300 bg-white shadow-xl rounded-xl overflow-hidden">
+        <!-- Header -->
+        <div class="px-8 py-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800">Individual Ticket</h3>
+          <p class="text-base text-gray-500">Best for solo attendees</p>
         </div>
-        <ul class="ul-list">
-          <li class="ticket-list">
-            <i class="fas fa-check text-green-500"></i> Access to all sessions
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-gift text-blue-500"></i> Free conference kit
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-utensils text-red-500"></i> Lunch & refreshments
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-certificate text-yellow-500"></i> Participation certificate
-          </li>
-        </ul>
-        <button
-          class="mt-8 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-3 rounded-full font-bold hover:from-pink-600 hover:to-pink-700 transform hover:scale-105 transition">
-          Book Now
-        </button>
+
+        <!-- Pricing Section -->
+        <div class="relative px-8 py-6">
+          <div class="absolute top-0 right-0 bg-pink-500 text-white px-4 py-2 text-sm font-semibold uppercase rounded-bl-xl">
+            Early Bird Price
+          </div>
+          <div class="text-center">
+            <span class="text-gray-400 line-through text-lg">฿4,000</span>
+            <div class="text-gray-800 text-6xl font-extrabold">฿3,500</div>
+            <p class="text-base text-gray-500">Jan 13 - Mar 15, 2025</p>
+          </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="px-8 py-6 flex-1">
+          <p class="text-gray-800 text-lg font-bold mb-4">Includes:</p>
+          <ul class="text-gray-600 text-base space-y-3">
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Access to all sessions</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Free conference kit</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Lunch & refreshments</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Participation certificate</li>
+          </ul>
+        </div>
+
+        <!-- Book Button -->
+        <div class="px-8 py-6 text-center">
+          <button
+            class="w-full bg-pink-500 text-white py-3 px-5 rounded-lg font-bold text-lg hover:bg-pink-600 transition transform hover:scale-110">
+            Book Now
+          </button>
+        </div>
       </div>
 
       <!-- Group Ticket -->
-      <div class="ticket-container border-green-500">
-        <!-- Highlight Banner -->
-        <div class="absolute top-0 left-0 bg-green-500 text-white px-4 py-2 text-xs uppercase font-bold">Most Popular
+      <div class="w-full sm:w-[350px] md:w-[400px] lg:w-[450px] border-4 border-green-300 bg-white shadow-xl rounded-xl overflow-hidden">
+        <!-- Header -->
+        <div class="px-8 py-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800">Group Ticket</h3>
+          <p class="text-base text-gray-500">Best for group attendees</p>
         </div>
-        <h3 class="text-2xl font-semibold text-green-600 mb-6">Group Ticket (5+ People)</h3>
-        <div class="text-center">
-          <div class="text-gray-800 text-5xl font-extrabold mb-2">SAVE 20%</div>
-          <p class="text-gray-500 text-sm">Discount for groups</p>
+
+        <!-- Pricing Section -->
+        <div class="relative px-8 py-6">
+          <div class="text-center">
+            <div class="text-gray-800 text-6xl font-extrabold">SAVE</div>
+            <p class="text-base text-gray-500">2-5 Persons : 10% Discount</p>
+            <p class="text-base text-gray-500">6 Persons or more : 20% Discount</p>
+          </div>
         </div>
-        <ul class="ul-list">
-          <li class="ticket-list">
-            <i class="fas fa-check text-green-500"></i> Access to all sessions
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-gift text-blue-500"></i> Free conference kit for all
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-utensils text-red-500"></i> Lunch & refreshments
-          </li>
-          <li class="ticket-list">
-            <i class="fas fa-star text-yellow-500"></i> Exclusive group benefits
-          </li>
-        </ul>
-        <button
-          class="mt-8 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-bold hover:from-green-600 hover:to-green-700 transform hover:scale-105 transition">
-          Book Now
-        </button>
+
+        <!-- Features Section -->
+        <div class="px-8 py-6 flex-1">
+          <p class="text-gray-800 text-lg font-bold mb-4">Includes:</p>
+          <ul class="text-gray-600 text-base space-y-3">
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Access to all sessions</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Free conference kit for all</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Lunch & refreshments</li>
+            <li><i class="fas fa-check text-green-500 mr-3"></i> Exclusive group benefits</li>
+          </ul>
+        </div>
+
+        <!-- Book Button -->
+        <div class="px-8 py-6 text-center">
+          <button
+            class="w-full bg-green-500 text-white py-3 px-5 rounded-lg font-bold text-lg hover:bg-green-600 transition transform hover:scale-110">
+            Book Now
+          </button>
+        </div>
       </div>
     </div>
   </section>
+
   <div id="footer"></div>
   <script src="./loadContent.js"></script>
 </body>
