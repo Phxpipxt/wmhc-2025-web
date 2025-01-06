@@ -562,7 +562,7 @@ body {
 
 .body {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .header {
@@ -926,9 +926,8 @@ body {
 /* Partner Style */
 
 .partner-logo {
-  margin-left: auto;
-  margin-right: auto;
-  height: 10rem;
+  height: 6rem;
+  width: 6rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -946,7 +945,12 @@ body {
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
-  padding: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 1.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 /* Contact & Form Style */
